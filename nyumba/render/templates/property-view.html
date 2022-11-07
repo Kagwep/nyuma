@@ -1,0 +1,54 @@
+{% extends 'main.html' %}
+
+
+{% block content %}
+
+
+
+
+<div class="section">
+
+    <div class="card">
+        <div class="card-header text-center">
+          Featured
+        </div>
+        <div class="container">
+
+          <div class="card m-2">
+              <div class="cards d-flex">
+                <div class="card">
+                  <div class="imagcard rounded-3">
+                    <img class="img-fluid" src="{{prop.image.url}}" style="height: 400px; width: 400px;" alt="Card image cap">
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="details text-center">
+                    <div class="text p-2 ">
+                      {{prop.name}}
+                    </div>
+                    <div class="text">
+                      {{prop.description}}
+                    </div>
+                    <div class="text">
+                      {{prop.location}}
+                    </div>
+                    <div class="text">
+                      {{prop.price}}
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+          </div>
+
+
+
+        </div>
+      </div>
+
+</div>
+
+
+{% endblock  %}

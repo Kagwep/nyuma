@@ -1,0 +1,65 @@
+{% extends 'main.html' %}
+
+
+{% block content %}
+<div class="section">
+    <div class="card justify-content-center text-center ">
+        <div class="card-header">
+          Featured
+        </div>
+        <div class="homecards  mx-5">
+            <div class="card border-0 shadow-sm ">
+                <div class="card-header bg-white border-0">
+                  Category
+                </div>
+                <div class="dropdown">
+                  <button class="btn  " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Buy
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </div>
+                <div class="dropdown">
+                  <button class="btn  " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Rent
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </div>
+            </div>
+            <div class="card border-0 ">
+                <div class="cardlist m-2 rounded-3 shadow-sm">
+                    <div class="card m-2 p-2 rounded-3 shadow-sm w-100" style="width: 18rem;">
+                      <div class="des">
+                        <div class="card w-100  p-2  m-0 border-0" >
+                          <img class="img-fluid" src="/media/images/daria-nepriakhina-LZkbXfzJK4M-unsplash.jpg" alt="Card image cap">
+                        </div>
+                        <div class="card w-100  p-2  m-0 border-0">
+                            <div class="card-body">
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card border-0 ">
+                <div class="card-header bg-white border-0">
+                  Filter
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+      </div> 
+</div>
+{% endblock %}

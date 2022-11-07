@@ -1,0 +1,86 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<div class="section">
+    
+<div class="card justify-content-center text-center ">
+    <div class="card-header">
+      Featured
+    </div>
+    <div class="homecards  mx-5">
+        <div class="card border-0 shadow-sm ">
+            <div class="card-header bg-white border-0">
+              Category
+            </div>
+            <div class="dropdown">
+              <button class="btn  " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Buy
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                {% for subcatcar in subcatcars%}
+                <a class="dropdown-item" href="#">{{subcatcar.name}}</a>
+                {% endfor %}
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="btn  " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Rent
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                {% for subcatcar in subcatcars%}
+                <a class="dropdown-item" href="#">{{subcatcar.name}}</a>
+                {% endfor %}
+              </div>
+            </div>
+        </div>
+        <div class="card border-0 ">
+            <div class="cardlist-cars m-2 rounded-3 shadow-sm m-2">
+              {% for car in cars %}
+                <div class="card m-2 p-2 rounded-3 shadow-sm w-100" style="width: 18rem;">
+                  <div class="des-cars">
+                    <div class="card   p-2  m-0 border-0" >
+                      <img class="img-fluid "  src="{{car.image.url}}" alt="Card image cap">
+                    </div>
+                    <div class="card  p-2  m-0 border-0" >
+                        <div class="text">
+                          {{car.name}}
+                        </div>
+                        <div class="text">
+                          {{car.sub_category}}
+                        </div>
+                        <div class="text">
+                          <p class="card-text text-center">{{car.description}}</p>
+                        </div>
+                        <div class="text">
+                          {{car.location}}
+                        </div>
+                        <div class="text">
+                          KSH {{car.price}}
+                        </div>
+
+    
+                    </div>
+                  </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="card border-0 ">
+            <div class="card-header bg-white border-0">
+              Filter
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+{% endblock  %}

@@ -1,0 +1,58 @@
+.imag{
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    background-image: url("/media/images/breno-assis-r3WAWU5Fi5Q-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+    background-position: center center;
+    color: hsl(0, 0%, 100%);
+  }
+  .centered{
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    
+   
+  }
+
+
+  form.formin input[type=text] {
+
+    padding: 15px;
+    font-size: 17px;
+    border: 1px solid grey;
+    width: 50%;
+    background: #ffff;
+    margin-top: 20px;
+
+  }
+
+
+  .homecards{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+  }
+
+  
+
+  .cardlist-cars{
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    margin: 5px;
+    
+
+  }
+
+  .des{
+    display: flex;
+  }
+
+  .cards{
+    display: flex;
+  }
+ 
