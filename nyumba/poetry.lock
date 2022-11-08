@@ -26,7 +26,7 @@ optional = false
 python-versions = "*"
 
 [package.dependencies]
-Django = ">3.2"
+Django = "*"
 
 [[package]]
 name = "django"
